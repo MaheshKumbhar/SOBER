@@ -50,8 +50,9 @@ if __name__ == '__main__':
     oversample_result, br_itr_df_aggregate, historical_virtual_obs_agg_ref, br_df_agg = SOBER().fit_sample(train_X, train_y)#, 5, 0.95)
     
     # oversample_result - oversampled dataset
-    # br_itr_df_aggregate - used to plot feature importance
+    # br_itr_df_aggregate - fun value for each iteration
     # historical_virtual_obs_agg_ref - virtual observations feature pair wise
-    # br_df_agg - concentration parameter with feature pair selection
+    # br_df_agg - used to plot feature importance and concentration parameter
     
+
 
