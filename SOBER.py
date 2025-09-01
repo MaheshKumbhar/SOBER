@@ -243,6 +243,7 @@ class SOBER:
     
             
             pair_ele = pair_keys[scoping_column_index]
+            pair_ele_export = tuple(pair_ele)
             
             dim_1_samples = random.sample(range(0, len(min_index)), len(list(pair_ele))+1)
             
@@ -276,8 +277,7 @@ class SOBER:
             br_itr_df["Iterations"] = function_call_output.nit    
             br_itr_df["fun_value"] = np.round(function_call_output.fun,5)
     
-            br_df = pd.DataFrame({"columns_selected": [pair_ele]}, index=[0])            
-            
+            br_df["columns_selected"] = [pair_ele_export]*len(br_df)            
             br_df["Iterations"] = function_call_output.nit        
             br_df["concentration_parameter"] = concentration_parameter
             
@@ -329,3 +329,4 @@ class SOBER:
         return oversample_result, br_itr_df_aggregate, historical_virtual_obs_agg_ref, br_df_agg
     
     
+
