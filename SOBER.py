@@ -205,7 +205,7 @@ class SOBER:
                 br_itr_df_aggregate_selection = br_itr_df_aggregate.groupby("columns_selected_index", as_index=False)["fun_value"].mean()
                 
                 excluded_items = set(pair_keys) - set(br_itr_df_aggregate_selection["columns_selected_index"]) 
-                if excluded_pairs_prior.empty & len(excluded_items) > 0:
+                if excluded_pairs_prior.empty and len(excluded_items) > 0:
                     
                     excluded_pairs = pd.DataFrame({"columns_selected_index": list(excluded_items)}) 
                     excluded_pairs["fun_value"] = br_itr_df_aggregate_selection["fun_value"].max()                     
@@ -329,4 +329,5 @@ class SOBER:
         return oversample_result, br_itr_df_aggregate, historical_virtual_obs_agg_ref, br_df_agg
     
     
+
 
