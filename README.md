@@ -2,7 +2,7 @@
 SOBER for imbalanced learning
 
 ## Introduction
-The implementation of Imbalanced Data Oversampling through Subspace Optimization with Bayesian Reinforcement (SOBER), which is under review in Artificial Intelligence Review. It generates synthetic samples using optimization, along with feature importance using Bayesian reinforcement. 
+The implementation of Imbalanced Data Oversampling through Subspace Optimization with Bayesian Reinforcement (SOBER), which is published in Artificial Intelligence Review. It generates synthetic samples using optimization, along with feature importance using Bayesian reinforcement. 
 
 ## Usage
 There is one method `SOBER().fit_sample(train_X, train_y)`, which takes the following two inputs:
@@ -17,4 +17,4 @@ Output:
 - `br_df_agg`: Feature subspaces selection with concentration parameter (alpha)
 
 ## References
-Kumbhar, M., Bandaru, S. & Karlsson, A. Imbalanced data oversampling through subspace optimization with Bayesian reinforcement. Artif Intell Rev 59, 1 (2026). https://doi.org/10.1007/s10462-025-11417-1
+Kumbhar, M., Bandaru, S. & Karlsson, A. Imbalanced data oversampling through subspace optimization with Bayesian reinforcement. Artificial Intelligence Review 59, 1 (2026). https://doi.org/10.1007/s10462-025-11417-1
