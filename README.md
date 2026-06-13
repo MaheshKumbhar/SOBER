@@ -15,3 +15,6 @@ Output:
 - `br_itr_df_aggregate`: Feature subspaces importance
 - `historical_virtual_obs_agg_ref`: Virtual observations generated during Bayesian reinforcement 
 - `br_df_agg`: Feature subspaces selection with concentration parameter (alpha)
+
+## References
+Kumbhar, M., Bandaru, S. & Karlsson, A. Imbalanced data oversampling through subspace optimization with Bayesian reinforcement. Artif Intell Rev 59, 1 (2026). https://doi.org/10.1007/s10462-025-11417-1
