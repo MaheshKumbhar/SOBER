@@ -9,7 +9,7 @@ Created on Wed May 28 08:01:21 2025
 """
 
 
-from SOBER_package import SOBER  
+from SOBER import SOBER  
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import re
